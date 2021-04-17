@@ -1,0 +1,25 @@
+{
+  "name": "fun-with-artillery",
+  "version": "1.0.0",
+  "description": "Experimenting with the load / performance testing tool, Artillery.",
+  "main": "index.js",
+  "scripts": {
+    "start": "artillery run",
+    "start:burst": "artillery run ./test-cases/10-request-burst.yaml",
+    "start:ramp": "artillery run ./test-cases/ramp-up.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimLynchCodes/Fun-With-Artillery.git"
+  },
+  "author": "JimLynchCodes",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/JimLynchCodes/Fun-With-Artillery/issues"
+  },
+  "homepage": "https://github.com/JimLynchCodes/Fun-With-Artillery#readme",
+  "devDependencies": {
+    "artillery": "^1.6.2"
+  }
+}
+

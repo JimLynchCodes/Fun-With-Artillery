@@ -1,0 +1,10 @@
+config:
+  target: https://www.aon.com/home/index.html
+  phases:
+    - duration: 1
+      arrivalRate: 100
+      name: 100 request burst
+scenarios:
+  - flow:
+      - get:
+          url: "/"

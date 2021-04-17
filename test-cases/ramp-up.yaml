@@ -1,0 +1,14 @@
+config:
+  target: https://www.aon.com/home/index.html
+  phases:
+    - name: warm up
+      duration: 5
+      arrivalRate: 1
+    - name: ramp up
+      duration: 20
+      arrivalRate: 5
+      rampTo: 100
+scenarios:
+  - flow:
+      - get:
+          url: "/"
